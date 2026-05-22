@@ -1,0 +1,303 @@
+*{margin: 0px; padding: 0px;
+box-sizing: border-box;}
+body{
+    font-family:Arial;
+    background:#f4f4f4;}
+.products-page{
+    padding:40px;
+    text-align:center;
+}
+
+.products-page h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.intro{
+    margin-bottom:40px;
+    font-size:18px;
+}
+
+.brand-section{
+    margin-bottom:60px;
+}
+
+.brand-section h2{
+    font-size:35px;
+    margin-bottom:25px;
+}
+
+.product-grid{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.product-grid article{
+    background:white;
+    width:280px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 10px #ccc;
+}
+
+.product-grid article img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.product-grid article h3{
+    margin:15px 0 10px;
+}
+
+.product-grid article p{
+    font-size:15px;
+    line-height:1.5;
+}
+
+.product-grid article h4{
+    color:#008cff;
+    margin:15px 0;
+    font-size:22px;
+}
+
+.product-grid article a{
+    background:black;
+    color:white;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:5px;
+    display:inline-block;
+}
+
+/* NAVBAR */
+
+header{
+    background:black;
+    color:white;
+    padding:20px 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+header{
+    background:black;
+    color:white;
+    padding:20px 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+* FOOTER */
+
+
+
+
+.about {
+justify-content: center;
+align-items: center;
+font-weight: bold;
+padding: 40px;}
+
+.about h2 { padding-top: 20px;
+}
+
+
+
+
+footer {background-color: rgb(29, 29, 29);}
+
+
+.container {width: 100%;
+    padding: 70px 30px 20px ;}
+
+    .social-icons {display: flex;
+    justify-content: center;}
+
+    .social-icons a {text-decoration: none;
+    background-color: white;
+border-radius: 50%;
+padding: 10px;
+margin: 20px;
+ transition: transform 0.4s ease;}
+
+ .social-icons a:hover{
+    transform: scale(1.2);
+}
+
+
+
+.social-icons a i {color: black;
+font-size: 20px;
+opacity: 0.9;
+margin: 12px;
+transition: 0.5s;}
+
+.footer-nav {margin: 10px;
+}
+
+.footer-nav ul { display: flex;
+justify-content: center;
+}
+
+.footer-nav ul li {text-decoration: none;
+list-style: none;}
+
+.footer-nav ul li a {text-decoration: none;
+margin: 50px;
+color: white;
+transition: 0.3s;
+opacity: 0.8;}
+
+.footer-nav ul li a:hover{opacity: 1;color: gray;}
+
+.footer-copyright {background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-copyright p{color: white;}
+
+/*phone-sections*/
+.phone-section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:60px;
+
+    padding:60px;
+    margin:40px 0;
+
+    background:white;
+}
+
+.phone-section video{
+    width:350px;
+    height:500px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+}
+
+.phone-text{
+    max-width:700px;
+}
+
+.phone-text h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.phone-text p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ALTERNATING LAYOUT */
+
+.alternate{
+    flex-direction:row-reverse;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .phone-section{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .alternate{
+        flex-direction:column;
+    }
+
+    .phone-section video{
+        width:100%;
+        max-width:350px;
+    }
+}
+
+/* PRODUCT CARD ANIMATION */
+
+.product-grid article{
+    background:white;
+    width:250px;
+    padding:20px;
+    border-radius:10px;
+
+    transition:0.4s;
+}
+
+/* HOVER EFFECT */
+
+.product-grid article:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px gray;
+}
+
+/* IMAGE ZOOM */
+
+.product-grid img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+
+    transition:0.4s;
+}
+
+.product-grid article:hover img{
+    transform:scale(1.05);
+}
+
+/* BUTTON ANIMATION */
+
+.product-grid a{
+    background:black;
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:5px;
+
+    display:inline-block;
+
+    transition:0.3s;
+}
+
+.product-grid a:hover{
+    background:#008cff;
+
+    transform:scale(1.1);
+}
